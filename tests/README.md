@@ -1,16 +1,13 @@
 # Tests
 
-This project uses Maven, which requires test source files to live under
-`src/test/java` in order for `mvn test` to discover and run them.
+The actual, runnable test suite lives at `src/test/java/com/expensetracker/`
+because Maven requires tests to be there in order for `mvn test` to
+discover and run them:
 
-The actual test suite is here:
-
-- `src/test/java/com/expensetracker/service/ExpenseServiceTest.java` — unit tests
-  for the business logic (add, filter, totals, delete) against a real in-memory
-  repository, no Spring context needed.
+- `src/test/java/com/expensetracker/service/ExpenseServiceTest.java` — unit
+  tests for the business logic (add, filter, totals, delete).
 - `src/test/java/com/expensetracker/controller/ExpenseControllerTest.java` —
-  full-stack tests that hit the actual HTTP layer via MockMvc, exercising
-  validation, error handling, and the real Spring context end to end.
+  full HTTP-layer tests via MockMvc (validation, error handling, endpoints).
 
 Run the whole suite with:
 
@@ -18,6 +15,7 @@ Run the whole suite with:
 mvn test
 ```
 
-This `tests/` folder is kept as the structural entry point requested in the
-assignment, since moving the test sources out of `src/test/java` would break
-Maven's build.
+A copy of both test files is also included here under `tests/java/` for
+easy browsing, matching the structure requested in the assignment brief.
+These are identical to the files under `src/test/java` — only the copies
+in `src/test/java` are actually executed by Maven.
