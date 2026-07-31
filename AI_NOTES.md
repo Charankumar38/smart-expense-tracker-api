@@ -1,6 +1,6 @@
 # AI Usage Notes
 
-**Q1. Which parts of the code were AI-generated vs. written by you?**
+**1. Which parts of the code were AI-generated vs. written by you?**
 
 I'm honestly still a beginner with Java and Spring Boot, so I used Claude
 to write the actual code for this assignment — the model, the DTO with
@@ -15,7 +15,7 @@ which took a while and had its own mistakes along the way (extracted Maven
 to the wrong folder at one point, mixed up terminal commands, etc.) before
 I got it working properly.
 
-**Q2. What did you validate, tested, or changed in the AI's output, and why?**
+**2. What did you validate, tested, or changed in the AI's output, and why?**
 
 Once I had everything running, I made sure I wasn't just blindly
 submitting whatever the AI gave me:
@@ -38,7 +38,7 @@ Nothing broke or looked wrong during any of that testing, so I didn't need
 to fix any bugs — but I only know it works because I tested it end to end
 myself, not because I assumed the AI got it right.
 
-**Q3. Any AI suggestion you decided not to use, and why?**
+**3. Any AI suggestion you decided not to use, and why?**
 
 The assignment offered an optional bonus (search, monthly summary,
 Swagger docs, or Docker), and Claude could have added one of these. I
